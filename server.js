@@ -3,6 +3,5 @@ const app = express();
 
 // Run the app by serving the static files in the dist directory
 app.use(express.static(__dirname + '/dist'));
-app .get('/', (req, res) => res.render('PROJECT-NAME/index'))
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);

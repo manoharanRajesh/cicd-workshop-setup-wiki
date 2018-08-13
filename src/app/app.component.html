@@ -1,8 +1,6 @@
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed--prominent" [mdcElevation]="24">
-    <div class="mdc-top-app-bar__row mdc-ripple-surface">
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <span class="mdc-top-app-bar__title">WorkShop Questioner </span>
-      </section>
+    <div id="toolbarHeader" class="mdc-top-app-bar__row mdc-ripple-surface">
+      <h1>Getting ready for WorkShop</h1>
     </div>
   </header>
 
@@ -11,32 +9,45 @@
     <mdc-card-primary-action mdc-ripple>
       <mdc-card-media class="demo-card__media--16-9" [wide]="false"></mdc-card-media>
       <div class="demo-card__primary">
-        <h1 class="demo-card__title" mdcHeadline3>VSTS Account</h1>
-        <h3 class="demo-card__subtitle" mdcSubtitle2>CI/CD Tool</h3>
+        <h1 class="demo-card__title "  mdcHeadline3 [mdcElevation]="15">VSTS</h1>
       </div>
       <div class="demo-card__secondary" mdcBody2>
-        <br/>
         <div class="media">
-            <object width="420" height="315"
-            data="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </object>
+          <iframe [mdcElevation]="18" width="95%" height="450" src="https://www.youtube.com/embed/vAOCCGrQwec?rel=0" 
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-        <br/>
-        <h3 mdcHeadline6>Check List TODO</h3>
+        <p>
+            Visual Studio Team Services (VSTS) is a cloud service for collaborating on code development. It provides an 
+            integrated set of features that you access through your web browser or IDE client
+            including git - source control tool , build and release managemen tools (CI/CD) , agile tools , testing tools ,dashboard & wiki . 
+        </p>
+        <h3 mdcHeadline6>Steps for creating VSTS account:</h3>
         <div>
           <mdc-list #checkboxes [border]=true dense=true>
             <mdc-list-item (click)="vsts1.toggle()">
-              <a  target="_blank" href="https://visualstudio.microsoft.com/vso/">sign-up</a>
+              <a  target="_blank" href="https://visualstudio.microsoft.com/team-services/">Goto</a>
               <mdc-checkbox #vsts1 mdcListItemMeta></mdc-checkbox>
             </mdc-list-item>
               <mdc-list-item (click)="vsts2.toggle()">
-                Click "Get started for free" button
+                  Click "signin" top right corner
                 <mdc-checkbox #vsts2 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
-                <mdc-list-item (click)="vsts3.toggle()">
-                  Sign in with cognizant mail id.
-                  <mdc-checkbox #vsts3 mdcListItemMeta></mdc-checkbox>
-                </mdc-list-item>
+              <mdc-list-item (click)="vsts4.toggle()">
+                  Give  &lt;your emp id&gt;@cognizant.com and Login with your CTS credentials
+                <mdc-checkbox #vsts4 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="vsts5.toggle()">
+                  Click create new organisation
+                <mdc-checkbox #vsts5 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="vsts6.toggle()">
+                  Give any name you like for your host
+                <mdc-checkbox #vsts6 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="vsts7.toggle()">
+                  MyFirstProject is created by default for your host
+                <mdc-checkbox #vsts7 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
               </mdc-list>
         </div>
       </div>
@@ -48,18 +59,18 @@
       <mdc-card-primary-action mdc-ripple>
         <mdc-card-media class="demo-card__media--16-9" [wide]="false"></mdc-card-media>
         <div class="demo-card__primary">
-          <h1 class="demo-card__title" mdcHeadline3>Azure Cloud Account</h1>
-          <h3 class="demo-card__subtitle" mdcSubtitle2>For running Jenkins VM</h3>
+          <h1 class="demo-card__title" mdcHeadline3 [mdcElevation]="15">Azure Cloud Account</h1>
         </div>
         <div class="demo-card__secondary" mdcBody2>
-          <br/>
           <div class="media">
-              <object width="420" height="315"
-              data="https://www.youtube.com/embed/tgbNymZ7vqY">
-              </object>
+              <iframe [mdcElevation]="18" width="95%" height="450" src="https://www.youtube.com/embed/vAOCCGrQwec?rel=0" 
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-          <br/>
-          <h3 mdcHeadline6>Check List TODO</h3>
+          <p>
+            Microsoft azure is a cloud services that offer IAAS, PAAS & FAAS etc.
+            We are going to use Microsoft azure IAAS for spinning VM and run Jenkins docker container.
+          </p>
+          <h3 mdcHeadline6>Steps For Creating Azure cloud account</h3>
           <div>
             <mdc-list #checkboxes [border]=true dense=true>
               <mdc-list-item (click)="azure1.toggle()">
@@ -85,28 +96,41 @@
       <mdc-card-primary-action mdc-ripple>
         <mdc-card-media class="demo-card__media--16-9" [wide]="false"></mdc-card-media>
         <div class="demo-card__primary">
-          <h1 class="demo-card__title" mdcHeadline3>Pivotal Account</h1>
-          <h3 class="demo-card__subtitle" mdcSubtitle2>For deployment Enviroment - Simulate OTAP</h3>
+          <h1 class="demo-card__title" mdcHeadline3 [mdcElevation]="15">Pivotal Account</h1>
         </div>
         <div class="demo-card__secondary" mdcBody2>
           <br/>
           <div class="media">
-              <object width="420" height="315"
-              data="https://www.youtube.com/embed/tgbNymZ7vqY">
-              </object>
+              <iframe [mdcElevation]="18" width="95%" height="450" src="https://www.youtube.com/embed/vAOCCGrQwec?rel=0" 
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-          <br/>
-          <h3 mdcHeadline6>Check List TODO</h3>
-
+          <p>
+              PCF(Pivotal cloud foundry) deliver any app to every major private 
+              and public cloud with a single platform.
+              We use PCF for showing work flow of CI/CD tools to the cloud services.
+          </p>
+          <h3 mdcHeadline6>Steps to create Pivotal account</h3>
           <div>
             <mdc-list #checkboxes [border]=true dense=true>
               <mdc-list-item (click)="pcf1.toggle()">
                   <a href="https://account.run.pivotal.io/z/uaa/sign-up">sign-up</a>
                 <mdc-checkbox #pcf1 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
-              <mdc-list-item (click)="pcf1.toggle()">
-                  Fill in the details asked and Enter phone no for validation.
-                <mdc-checkbox #pcf1 mdcListItemMeta></mdc-checkbox>
+              <mdc-list-item (click)="pcf2.toggle()">
+                  Fill in the details asked and use Give  &lt;your emp id&gt;@cognizant.com.
+                <mdc-checkbox #pcf2 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="pcf3.toggle()">
+                  Verify mail id by click the link in you mail box. 
+                <mdc-checkbox #pcf3 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="pcf4.toggle()">
+                  Login with new user name and password.  
+                <mdc-checkbox #pcf4 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="pcf5.toggle()">
+                  Click pivotal web service and enter the phone number.  
+                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
             </mdc-list>
           </div>

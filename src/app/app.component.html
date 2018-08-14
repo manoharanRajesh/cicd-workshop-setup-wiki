@@ -19,7 +19,9 @@
         <p>
             Visual Studio Team Services (VSTS) is a cloud service for collaborating on code development. It provides an 
             integrated set of features that you access through your web browser or IDE client
-            including git - source control tool , build and release managemen tools (CI/CD) , agile tools , testing tools ,dashboard & wiki . 
+            including git - source control tool , build and release managemen tools (CI/CD) , agile tools , testing tools ,dashboard & wiki .
+            <br/>
+            Note: skip the below steps if you already have VSTS account.
         </p>
         <h3 mdcHeadline6>Steps to creating VSTS account:</h3>
         <div>
@@ -69,6 +71,8 @@
           <p>
             Microsoft azure is a cloud services that offer IAAS, PAAS & FAAS etc.
             We are going to use Microsoft azure IAAS for spinning VM and run Jenkins docker container.
+            <br/>
+            Note: Skip the below step in case if you have Azure cloud account.
           </p>
           <h3 mdcHeadline6>Steps to Creating Azure cloud account</h3>
           <div>
@@ -137,27 +141,27 @@
                 After a successful login, your Pivotal account landing page looks like .
                 <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
-              <mdc-list-item (click)="pcf5.toggle()">
+              <mdc-list-item (click)="pcf6.toggle()">
                 Click the Pivotal Web Services link and agree to the Terms of Service for Pivotal Web Services.
-                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+                <mdc-checkbox #pcf6 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
-              <mdc-list-item (click)="pcf5.toggle()">
+              <mdc-list-item (click)="pcf7.toggle()">
                 Next, click "Claim Your Trial" button and complete the Mobile Verification process to claim your trial account.
                 Note: You can upgrade your account at any time. If any issues, plz mail "support@run.pivotal.io" to claim your trail.
-                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+                <mdc-checkbox #pcf7 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
-              <mdc-list-item (click)="pcf5.toggle()">
+              <mdc-list-item (click)="pcf8.toggle()">
                 Provide your mobile verification code.
-                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+                <mdc-checkbox #pcf8 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
-              <mdc-list-item (click)="pcf5.toggle()">
+              <mdc-list-item (click)="pcf9.toggle()">
                 After successful mobile verification, create your Trail ORG (Project).
-                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+                <mdc-checkbox #pcf9 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
-              <mdc-list-item (click)="pcf5.toggle()">
+              <mdc-list-item (click)="pcf10.toggle()">
                 Provide your Organization name or Project Name then click "Start Free Trial" button. After that,
                 Pivotal will take you the default "development" space landing page.
-                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+                <mdc-checkbox #pcf10 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
             </mdc-list>
           </div>

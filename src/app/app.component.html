@@ -108,6 +108,11 @@
               PCF(Pivotal cloud foundry) deliver any app to every major private 
               and public cloud with a single platform.
               We use PCF for showing work flow of CI/CD tools to the cloud services.
+            <br/>
+            Here is the step by step procedure to create a new Pivotal Web Services account.
+            If you have a Pivotal account already, please skip this.
+            Note:Used my CTS email - &lt;firstname.lastname&gt;@cognizant.com - to create a Pivotal Web Services account.
+
           </p>
           <h3 mdcHeadline6>Steps to create Pivotal account</h3>
           <div>
@@ -125,11 +130,33 @@
                 <mdc-checkbox #pcf3 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
               <mdc-list-item (click)="pcf4.toggle()">
-                  Login with new user name and password.  
+                  Login with new user name and password.
                 <mdc-checkbox #pcf4 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
               <mdc-list-item (click)="pcf5.toggle()">
-                  Click pivotal web service and enter the phone number.  
+                After a successful login, your Pivotal account landing page looks like .
+                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="pcf5.toggle()">
+                Click the Pivotal Web Services link and agree to the Terms of Service for Pivotal Web Services.
+                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="pcf5.toggle()">
+                Next, click "Claim Your Trial" button and complete the Mobile Verification process to claim your trial account.
+                Note: You can upgrade your account at any time. If any issues, plz mail "support@run.pivotal.io" to claim your trail.
+                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="pcf5.toggle()">
+                Provide your mobile verification code.
+                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="pcf5.toggle()">
+                After successful mobile verification, create your Trail ORG (Project).
+                <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="pcf5.toggle()">
+                Provide your Organization name or Project Name then click "Start Free Trial" button. After that,
+                Pivotal will take you the default "development" space landing page.
                 <mdc-checkbox #pcf5 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
             </mdc-list>

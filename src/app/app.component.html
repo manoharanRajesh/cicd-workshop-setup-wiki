@@ -13,7 +13,7 @@
       </div>
       <div class="demo-card__secondary" mdcBody2>
         <div class="media">
-          <iframe [mdcElevation]="18" width="95%" height="700" src="https://www.youtube.com/embed/SJb9ehf4HV4"
+          <iframe [mdcElevation]="18" width="95%" height="500" src="https://www.youtube.com/embed/SJb9ehf4HV4"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <p>
@@ -65,7 +65,7 @@
         </div>
         <div class="demo-card__secondary" mdcBody2>
           <div class="media">
-              <iframe [mdcElevation]="18" width="95%" height="700" src="https://www.youtube.com/embed/SJb9ehf4HV4"
+              <iframe [mdcElevation]="18" width="95%" height="500" src="https://www.youtube.com/embed/4-n4Osw5rts"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
           <p>
@@ -73,22 +73,38 @@
             We are going to use Microsoft azure IAAS for spinning VM and run Jenkins docker container.
             <br/>
             Note: Skip the below step in case if you have Azure cloud account.
+            Please use your Cognizant mail id for creating the account.
+            <b>Please use IE / Edge Browser</b>
           </p>
           <h3 mdcHeadline6>Steps to Creating Azure cloud account</h3>
           <div>
             <mdc-list #checkboxes [border]=true dense=true>
               <mdc-list-item (click)="azure1.toggle()">
-                <a  target="_blank" href="https://azure.microsoft.com/en-gb/free/">sign-up</a>
+                <a  target="_blank" href="https://portal.azure.com/#">Goto</a>
                 <mdc-checkbox #azure1 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
               <mdc-list-item (click)="azure2.toggle()">
-                Click "Start for free" button
+                Give  &lt;your emp id&gt;@cognizant.com and Login with your CTS credentials.
                 <mdc-checkbox #azure2 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
               <mdc-list-item (click)="azure3.toggle()">
-                Sign in with cognizant mail id.
+                After Sucessful login,
+                <a  target="_blank" href="https://azure.microsoft.com/en-us/free/">Goto</a> to claim free trial
                 <mdc-checkbox #azure3 mdcListItemMeta></mdc-checkbox>
               </mdc-list-item>
+              <mdc-list-item (click)="azure4.toggle()">
+                Fill the values and agree the terms. You will receive Free Trail Credit.
+                <mdc-checkbox #azure4 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+              <mdc-list-item (click)="azure5.toggle()">
+                Note : If you get "Something went wrong error" please try after some time.
+                <br/>
+                Optional :
+                If you have time please do the steps in <br/>
+                <a  target="_blank" href="https://github.com/manoharanRajesh/cicd/blob/dev/README.md#to-create-vm-in-azure">README</a>
+                <mdc-checkbox #azure5 mdcListItemMeta></mdc-checkbox>
+              </mdc-list-item>
+
             </mdc-list>
           </div>
         </div>
@@ -105,7 +121,7 @@
         <div class="demo-card__secondary" mdcBody2>
           <br/>
           <div class="media">
-              <iframe [mdcElevation]="18" width="95%" height="700" src="https://www.youtube.com/embed/ZqTzxyoTu48"
+              <iframe [mdcElevation]="18" width="95%" height="500" src="https://www.youtube.com/embed/ZqTzxyoTu48"
           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
           <p>
